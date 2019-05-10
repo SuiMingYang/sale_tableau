@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.17.1226.1925                               -->
+<workbook original-version='10.5' source-build='10.5.0 (10500.17.1226.1925)' source-platform='win' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (1.1-2.13活跃度)' inline='true' name='federated.0gmpiom0nj7vqg1ahzyrf1spaq72' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='1.1-2.13活跃度' name='excel-direct.0ouek3c0ivshnb1cimqnr0ev1860'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/BJ000130/Desktop/1.1-2.13活跃度.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0ouek3c0ivshnb1cimqnr0ev1860' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A2:G5:no:A2:G5:0' header='yes' outcome='2'>
+            <column datatype='integer' name='订单数' ordinal='0' />
+            <column datatype='integer' name='总人数' ordinal='1' />
+            <column datatype='integer' name='下单用户' ordinal='2' />
+            <column datatype='string' name='用户属性' ordinal='3' />
+            <column datatype='integer' name='人数' ordinal='4' />
+            <column datatype='string' name='活跃周期' ordinal='5' />
+            <column datatype='integer' name='活跃人数' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>订单数</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[订单数]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>订单数</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>总人数</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[总人数]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>总人数</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>下单用户</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[下单用户]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>下单用户</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>用户属性</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[用户属性]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>用户属性</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人数</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[人数]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>人数</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>活跃周期</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[活跃周期]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>活跃周期</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>活跃人数</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[活跃人数]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>活跃人数</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A2:G5:no:A2:G5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[活跃周期]' role='dimension' type='nominal' />
+      <column-instance column='[活跃周期]' derivation='None' name='[none:活跃周期:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.335366' measure-ordering='alphabetic' measure-percentage='0.664634' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:活跃周期:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;周活&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;月活&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='活跃周期'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (1.1-2.13活跃度)' name='federated.0gmpiom0nj7vqg1ahzyrf1spaq72' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmpiom0nj7vqg1ahzyrf1spaq72'>
+            <column-instance column='[活跃周期]' derivation='None' name='[none:活跃周期:nk]' pivot='key' type='nominal' />
+            <column-instance column='[活跃人数]' derivation='Sum' name='[pcto:sum:活跃人数:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[活跃人数]' derivation='Sum' name='[sum:活跃人数:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[活跃人数]' role='measure' type='quantitative' />
+            <column datatype='string' name='[活跃周期]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[none:活跃周期:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:活跃周期:nk]' />
+              <groupfilter function='member' level='[none:活跃周期:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[none:活跃周期:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[none:活跃周期:nk]' />
+              <wedge-size column='[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[pcto:sum:活跃人数:qk]' />
+              <size column='[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[sum:活跃人数:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='粉丝占比'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (1.1-2.13活跃度)' name='federated.0gmpiom0nj7vqg1ahzyrf1spaq72' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmpiom0nj7vqg1ahzyrf1spaq72'>
+            <column-instance column='[用户属性]' derivation='None' name='[none:用户属性:nk]' pivot='key' type='nominal' />
+            <column-instance column='[人数]' derivation='Sum' name='[pcto:sum:人数:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[人数]' derivation='Sum' name='[sum:人数:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[人数]' role='measure' type='quantitative' />
+            <column datatype='string' name='[用户属性]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[none:用户属性:nk]' />
+              <wedge-size column='[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[pcto:sum:人数:qk]' />
+              <size column='[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[sum:人数:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='粉丝占比'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[none:用户属性:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[sum:人数:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[none:用户属性:nk]</field>
+            <field>[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[sum:铁杆:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='活跃周期'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[none:活跃周期:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[sum:活跃人数:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gmpiom0nj7vqg1ahzyrf1spaq72].[none:活跃周期:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='活跃周期' width='192'>
+      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
+      sRfzgG7vNiQAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='粉丝占比' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
